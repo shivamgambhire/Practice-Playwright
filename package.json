@@ -8,7 +8,8 @@
     "tests:Chrome": "playwright test --config=playwright.config.ts --project=Chromium",
     "tests:Firefox": "playwright test --config=playwright.config.ts --project=firefox",
     "tests:Safari": "playwright test --config=playwright.config.ts --project=webkit",
-    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium" 
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
+    "tests:incubyte": "playwright test --config=incubyte.config.ts --project=Chromium" 
   },
   "author": "shivam",
   "license": "ISC",
