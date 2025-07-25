@@ -12,7 +12,7 @@ const config: PlaywrightTestConfig = {
         video: 'off',
         screenshot: 'off',
     },
-    retries: 2,
+    retries: 0,
     projects: [
         {
             name: 'Chromium',
