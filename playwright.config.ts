@@ -1,6 +1,7 @@
 import { PlaywrightTestConfig } from '@playwright/test';
 
 const config: PlaywrightTestConfig = {
+    testDir: 'tests',       // Test files are in 'tests/e2e' directory
     use: {
         headless: true,
         viewport: { width: 1280, height: 720 },
@@ -9,7 +10,7 @@ const config: PlaywrightTestConfig = {
         screenshot: 'only-on-failure',
     },
     retries: 2,
-    /*projects: [
+    projects: [
         {
             name: 'chromium',
             use: { browserName: 'chromium' },
@@ -22,7 +23,7 @@ const config: PlaywrightTestConfig = {
             name: 'webkit',
             use: { browserName: 'webkit' },
         },
-    ],*/
+    ],
     reporter: [['html', { outputFolder: 'test-results' }]],   // Generate reports
     timeout: 30000,
 };

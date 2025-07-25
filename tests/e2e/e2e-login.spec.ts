@@ -1,7 +1,7 @@
 import {test,expect} from "@playwright/test";
 import { LoginPage } from "../../Page-objects/LoginPage"    //importing LoginPage class from Page-objects-model folder
 
-test.describe.parallel.only("Login Logout Flow", () => {
+test.describe.parallel("Login Logout Flow", () => {
     //before each
     let loginpage: LoginPage
     

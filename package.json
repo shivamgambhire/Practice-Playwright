@@ -9,7 +9,10 @@
     "tests:Firefox": "playwright test --config=playwright.config.ts --project=firefox",
     "tests:Safari": "playwright test --config=playwright.config.ts --project=webkit",
     "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
-    "tests:incubyte": "playwright test --config=incubyte.config.ts --project=Chromium" 
+    "tests:incubyte": "playwright test --config=incubyte.config.ts --project=Chromium",
+    "tests:api": "playwright test --config=apiTest.config.ts --project=Chromium --reporter=list",
+    "jenkins:server" : "java -jar jenkins.war --httpPort=8080 --enable-future-java",
+    "tests:practice": "playwright test --config=practice.config.ts --project=Chromium"
   },
   "author": "shivam",
   "license": "ISC",
