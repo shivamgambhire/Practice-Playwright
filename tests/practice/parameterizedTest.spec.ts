@@ -2,7 +2,7 @@ import {test,expect} from "@playwright/test";
 
 test.describe("practice tests", () => {
     
-    test.only("parameterrized tests with array", async({page}) =>{
+    test("parameterrized tests with array", async({page}) =>{
         
         const userNames = ["shivam", "jhon","sam", "Ana"]
 
